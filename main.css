@@ -1,0 +1,380 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F3E8;
+    font-family: Helvetica, Arial, sans-serif;
+}
+/*https://www.yourdiningapp.com/skin/frontend/ot/restaurant/images/hm_imgs/picjumbo1.jpg*/
+
+.hero {
+    background-image: url('https://anandipaliwal.files.wordpress.com/2015/06/food-table-relisted.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    border-radius: 4px;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app .navbar {
+    color: white;
+    background-color: #cb202d;
+}
+
+#app .navbar a {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#app .login {
+    background-color: #cb202d;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app .login-form {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 1rem;
+    padding-top: 0;
+    border-radius: 4px;
+}
+.hero {
+    margin-bottom: 2rem;
+}
+
+.restaurant {
+    background-color: white;
+    position: relative;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.rest-wrapper {
+    display: flex;
+    font-family: sans-serif;
+}
+
+.rest-wrapper .image {
+    margin-right: 1rem;
+}
+
+.rest-wrapper .image img {
+    border-radius: 4px;
+}
+
+.rest-wrapper .rest-name {
+    font-size: 24px;
+    color: #cb202d !important ;
+}
+
+.rest-wrapper .rest-category {
+    color: #89959B;
+    text-transform: uppercase;
+}
+
+.rest-wrapper .rest-address {
+    color: #89959B;
+}
+
+.best-dish {
+    display: flex;
+    padding: 1rem 0;
+}
+
+.type {
+    text-transform: uppercase;
+     color: #89959B;
+     flex: none;
+     margin-right: 2rem;
+}
+
+.restaurant .rating {
+    color: white;
+    background-color: #5BA829;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+
+
+.search-bar {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    position: relative;
+    top: 50px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    width: 145%;
+    position: relative;
+    left:-50px;
+}
+
+.search-bar form .input-wrapper {
+   flex: 1;
+   margin-right: 1rem;
+}
+/*---------------------------------my css-----------------------*/
+.btn-default {
+    color: #fff;
+    background-color: #cb202d;
+    border:none;
+}
+.loc-btn {
+    display: inline-block;
+    color: #000;
+    background-color: #fff;
+    padding: 6px 11.7px;
+}
+.caret {
+    margin-left: -30px;
+    color: black;
+}
+.btn
+{
+    text-align: center;
+}
+p
+{
+    position: relative;
+    top: 55px;
+}
+#app_name {
+    position: relative;
+    width: 116px;
+    height: 120px;
+    background: #cb202d;
+    color: white;
+    font-size: 26px;
+    margin: -45px auto;
+    text-align: center;
+    padding-top: 39px;
+    top: -8px;
+    border-radius: 4px;
+}
+.rest_name
+{
+     color: #cb202d !important ;
+}
+/*-------------------------------------------------*/
+.resturant
+{
+    background-color: snow;
+    position: relative;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0rem;
+    padding-bottom: 1rem;
+    border-radius: 4px;
+}
+.restwrapper
+{
+    font-family: sans-serif;
+}
+.resta-image img
+{
+    border-radius: 4px;
+    width: 100%;
+    height: 300px;
+}
+.resta-info
+{   
+    padding: 0 2rem;
+    position: relative;
+    top: 10px;
+}
+.resta-name
+{
+    padding: 0.5rem 0; 
+    font-size: 32px;
+    font-weight: 500;
+}
+.ratings
+{
+    color: white;
+    background-color: #5BA829;
+    position: absolute;
+    top: 31.5rem;
+    right: 2rem;
+    padding: 0.45rem 1.5rem;
+    font-size: 22px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+.resta-location
+{
+    font-size: 20px;
+    font-weight: 500;
+    color: #999;
+    position: relative;
+    top: 1.5rem;
+}
+.order
+{
+    position: relative;
+    border-top: 1px solid #e7e7e7;
+    top: 1rem;
+    padding: 2rem 0;
+    margin: 2rem;
+}
+.order-btn
+{
+    background: #099E44;
+    border-radius: 4px;
+    padding: 1rem 2.5rem;
+    font-size: 17px;
+    margin-top: 1rem;
+
+}
+.ingredients-btn
+{
+    background: #099E44;
+    font-size: 15px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+}
+.ingredients-btn: hover
+{
+    background-color: darkgray;
+}
+.dish_img
+{
+    width: 250px;
+    height: 150px;
+    padding: 1rem;
+    border-radius: 13px;
+}
+.fa{
+    font-size: 20px;
+}
+.form-control-feedback {
+    position: absolute;
+    top: 11px;
+    right: 158px;
+    line-height: 34px;
+    text-align: center;
+    color: #999;
+}
+.restaurant_info {
+    background-color: white;
+    position: relative;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 4px;
+    max-width: 800px;
+}
+#overview_div
+{
+    width: 95%;
+    margin: auto;
+    font-size: 20px;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e7e7e7;
+    color: #777565;
+}
+#menu_div
+{
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e7e7e7;
+    color: #777565;
+}
+.small-row
+{
+    height: 110px;
+}
+ul
+{
+    list-style: none;
+}
+.menu_list img
+{
+    height: 150px;
+    width: 150px;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 4px;
+}
+
+.menu_list p
+{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    font-size: 22px;
+    text-decoration: underline;
+    color: maroon;
+    text-align: center;
+    width: 200px;
+}
+.menu_list  
+{
+    background: beige;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+.menu_list .warning
+{
+    color: red;
+    font-size: 14px;
+    text-decoration: none;
+    background: snow;
+    padding: 0.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: 4px 5px 10px #f44;
+}
+.warning
+{
+    color: red;
+    font-size: 14px;
+    text-decoration: none;
+    background: snow;
+    padding: 0.5rem;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: 4px 5px 10px #f44;
+}
+.done_item
+{
+    text-decoration: line-through;
+}

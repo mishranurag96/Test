@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="container-fluid" id="wrapper">
+		<div class="row">
+			<div class="col-md-8">
+				<!-- <div id="main"></div> -->
+				<div class="resturant">
+					<div class="restwrapper">
+						<div class="resta-image"><img ng-src="{{restaurant.image}}"></div>
+						<div class="resta-info">
+							<!-- <div class="rest-category">
+               <small>{{restaurant.category}} </small>
+            </div> -->
+							<div class="resta-name">
+								{{restaurant.name}}
+							</div>
+							<div class="resta-location">
+								{{restaurant.location}}, Chandigarh
+							</div>
+							
+						</div>
+					</div><!--  <div class="rest-extra">
+        <div class="type">
+            <div><small>Cuisines:</small></div>
+            <div><small>Cost for Two: </small></div>
+            <div><small>Hours:</small></div>
+        </div>
+        <div class="value">
+            <div>{{restaurant.cuisines}}</div>
+            <div>₹{{restaurant.cost | number}}</div>
+            <div>{{restaurant.hours}}</div>
+        </div>
+    </div> -->
+    				<div class="order">
+    				<div class="best-dish" ng-if="restaurant.best_dish.name">
+    					<div class="type">
+    						<div><small>Recommended:</small></div>
+    					</div>
+    					<div class="value">
+            				<div>{{restaurant.best_dish.name}}</div>
+        				</div>
+        				<button type="submit" class="ingredients-btn btn-default" ng-click="getIngredients(restaurant.best_dish.image)">Get Ingredients</button>
+        				<!-- <button type="submit" class="ingredients-btn btn-default" ng-click="getIngredients(restaurant.best_dish.image)">Grocery List</button> -->
+    				</div>
+    				<button type="submit" class="order-btn btn-default">Order Food Online</button> 					
+    				</div>
+					<div class="ratings">
+						<strong>{{restaurant.vote}}</strong>
+					</div>
+
+					
+					</div>
+					<div class="container-fluid restaurant_info" id="wrapper">
+						<div class="row">
+							<div class="small_row">
+							<div id="overview_div">OVERVIEW</div>
+							<div class="col-md-4">
+							<div class="type"><small>CUISINE:</small></div>
+							<div>
+								{{restaurant.cuisines}}
+							</div>
+							</div>
+							<div class="col-md-4">
+							<div class="type"><small>ADDRESS:</small></div>
+							<div class="rest-address">
+								{{restaurant.address}}
+							</div> 
+							</div>
+							<div class="col-md-4">
+							<div class="type"><small>OPENING HOURS:</small></div>
+							<div>
+								{{restaurant.hours}}
+							</div>
+							</div>
+							</div>
+
+
+						</div>
+						<div class="row">
+							<div class="small_row">
+							<div id="overview_div">MENU</div>
+							<!-- <div class="col-md-4">
+							<div class="type"><small>CUISINE:</small></div>
+							<div>
+								{{restaurant.cuisines}}
+							</div>
+							</div>
+							<div class="col-md-4">
+							<div class="type"><small>ADDRESS:</small></div>
+							<div class="rest-address">
+								{{restaurant.address}}
+							</div> 
+							</div>
+							<div class="col-md-4">
+							<div class="type"><small>OPENING HOURS:</small></div>
+							<div>
+								{{restaurant.hours}}
+							</div>
+							</div> -->
+							<ul>
+								<li class="menu_list" ng-repeat="menu in restaurant.menu"><img ng-src="{{menu.menu_image}}">
+								<p ng-click="getIngredients(menu.menu_image)">{{menu.menu_name}}</p><p ng-if="msg" class="warning">{{msg}}</p></li>
+							</ul>
+							</div>
+							
+
+						</div>
+						<!-- <div id="menu_div">MENU</div> -->
+					</div>
+					</div>
+					<div class="col-md-4" style="text-align:justify">
+				<!-- <div id="sidebar"></div> -->
+				<div ng-if="ingredient" ng-show="flag">
+					<img class="dish_img" ng-src="{{restaurant.best_dish.image}}">
+    				<ol>
+    				<li ng-repeat="ingredient in ingredient">
+    				{{ingredient}}
+    				</li>
+    				</ol>
+				</div>
+				<div ng-if="msg" ng-show="flag" class="warning">{{msg}}</div> 
+				<!-- <div ng-if="grocery_list">
+				<ul>
+					<li ng-repeat="grocery_list in grocery_list">
+						<input id="test" type="checkbox" ng-click="checkedCB()"> <span class="list_names">{{grocery_list}}</span> 
+					</li>
+				</ul>
+				</div> -->
+			</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</body>
+</html>
